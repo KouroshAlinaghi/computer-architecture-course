@@ -1,0 +1,179 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Kourosh/Documents/logic-circuits/CA6/simulation/modelsim
+vController
+Z0 !s110 1710229200
+!i10b 1
+!s100 KOh^RMJ<OeZ:SeC[fGghJ1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IN]?9WWd;<=AQ`7hBh5of92
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Kourosh/Documents/pain/ca1
+w1710180625
+8C:/Users/Kourosh/Documents/pain/ca1/controller.v
+FC:/Users/Kourosh/Documents/pain/ca1/controller.v
+!i122 641
+L0 14 54
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1710229199.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca1/controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca1/controller.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@controller
+vCounter4Bit
+!s110 1710229202
+!i10b 1
+!s100 <QmB[CalDVABc:c7<jZee2
+R1
+I3n6cIaCe<lH]daFY]kAY12
+R2
+R3
+w1710172531
+8C:/Users/Kourosh/Documents/pain/ca1/counter-4-bit.v
+FC:/Users/Kourosh/Documents/pain/ca1/counter-4-bit.v
+!i122 647
+L0 1 19
+R4
+r1
+!s85 0
+31
+Z7 !s108 1710229201.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca1/counter-4-bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca1/counter-4-bit.v|
+!i113 1
+R5
+R6
+n@counter4@bit
+vDatapath
+R0
+!i10b 1
+!s100 ]B^OOFOboGm0D^g_h_e__2
+R1
+I^^K0SMhc7fIAD=V;i:POX2
+R2
+R3
+w1710180602
+8C:/Users/Kourosh/Documents/pain/ca1/datapath.v
+FC:/Users/Kourosh/Documents/pain/ca1/datapath.v
+!i122 642
+L0 2 44
+R4
+r1
+!s85 0
+31
+Z8 !s108 1710229200.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca1/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca1/datapath.v|
+!i113 1
+R5
+R6
+n@datapath
+vDivider
+R0
+!i10b 1
+!s100 :Ul1JhA@0KBm0bJ0<NBn_2
+R1
+I=G64Wn>ll4eD62HHSh6Fd0
+R2
+R3
+w1710180635
+8C:/Users/Kourosh/Documents/pain/ca1/divider.v
+FC:/Users/Kourosh/Documents/pain/ca1/divider.v
+!i122 643
+L0 2 24
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Kourosh/Documents/pain/ca1/divider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca1/divider.v|
+!i113 1
+R5
+R6
+n@divider
+vDividerTB
+Z9 !s110 1710229201
+!i10b 1
+!s100 ]SoD0;VM;mSD]fFgU7:_f3
+R1
+IGg59N_FeUbG<Jch3eZcF31
+R2
+R3
+w1710229195
+8C:/Users/Kourosh/Documents/pain/ca1/tb.v
+FC:/Users/Kourosh/Documents/pain/ca1/tb.v
+!i122 644
+L0 2 25
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Kourosh/Documents/pain/ca1/tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca1/tb.v|
+!i113 1
+R5
+R6
+n@divider@t@b
+vNomralReg10
+R9
+!i10b 1
+!s100 ]YTP[iJBD<YlNcEgL<94J0
+R1
+IiGU92iR6l1H2P408C>O9Q0
+R2
+R3
+w1710180902
+8C:/Users/Kourosh/Documents/pain/ca1/normal-reg-10.v
+FC:/Users/Kourosh/Documents/pain/ca1/normal-reg-10.v
+!i122 645
+L0 1 13
+R4
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Kourosh/Documents/pain/ca1/normal-reg-10.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca1/normal-reg-10.v|
+!i113 1
+R5
+R6
+n@nomral@reg10
+vShiftReg10
+R9
+!i10b 1
+!s100 [3_6mf@J1a1ODgmc;3fRB0
+R1
+I2;?O`Cn3NiA@KK91cfj8K3
+R2
+R3
+w1710180921
+8C:/Users/Kourosh/Documents/pain/ca1/shift-reg-10.v
+FC:/Users/Kourosh/Documents/pain/ca1/shift-reg-10.v
+!i122 646
+L0 1 17
+R4
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Kourosh/Documents/pain/ca1/shift-reg-10.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca1/shift-reg-10.v|
+!i113 1
+R5
+R6
+n@shift@reg10

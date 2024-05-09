@@ -1,0 +1,50 @@
+C:/Users/Kourosh/Documents/pain/ca1/counter-4-bit.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca1/counter-4-bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Counter4Bit
+
+Top level modules:
+	Counter4Bit
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca1/tb.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca1/tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DividerTB
+
+Top level modules:
+	DividerTB
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca1/normal-reg-10.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca1/normal-reg-10.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module NomralReg10
+
+Top level modules:
+	NomralReg10
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca1/divider.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca1/divider.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Divider
+
+Top level modules:
+	Divider
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca1/shift-reg-10.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca1/shift-reg-10.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ShiftReg10
+
+Top level modules:
+	ShiftReg10
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca1/datapath.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca1/datapath.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Datapath
+
+Top level modules:
+	Datapath
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca1/controller.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca1/controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}}
