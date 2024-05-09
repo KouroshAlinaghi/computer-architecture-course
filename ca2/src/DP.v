@@ -8,8 +8,9 @@ module Datapath(
     input [31:0] inst_mem_read;
     input [31:0] data_mem_read;
 
-    input PC_src, reg_write, ALU_src, mem_write, result_src;
-    input [1:0] imm_src;
+    input PC_src, reg_write, ALU_src, mem_write;
+    input [1:0] result_src;
+    input [2:0] imm_src;
     input [2:0] ALU_func;
 
     output zero;
@@ -50,8 +51,8 @@ module Datapath(
         imm_extended
     );
 
-    Mux2To1 result_mux(
-        ALU_res, data_mem_read, result_src,
+    Mux4To1 result_mux(
+        ALU_res, data_mem_read, next_pc, imm_extended, result_src,
         result
     );
     

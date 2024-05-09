@@ -13,7 +13,10 @@ module CPU(
     output [31:0] data_mem_write;
 
     // controlling signals
-    wire PC_src, reg_write, ALU_src, imm_src, mem_write, result_src;
+    wire PC_src, reg_write, ALU_src, mem_write;
+    wire [2:0] imm_src;
+    
+    input [1:0] result_src;
     wire [2:0] ALU_func;
 
     wire zero;
