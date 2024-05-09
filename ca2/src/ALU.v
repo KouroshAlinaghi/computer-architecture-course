@@ -8,22 +8,21 @@
 
 module ALU(
     lhs, rhs, func,
-    res, zero
+    res, zero, neg
 );
     input [31:0] lhs;
     input [31:0] rhs;
     input [3:0] func;
 
-    output zero;
+    output zero, neg;
     output [31:0] res;
 
     reg [31:0] res;
 
     assign zero = (res == 32'b0) ? 1'b1 : 1'b0;
+    assign neg = res[31];
 
-    always (lhs, rhs, func) begin
-        zero = 1'b0;
-
+    always @(lhs, rhs, func) begin
         case (func)
             `ADD_FUNC: res = lhs + rhs;
             `SUB_FUNC: res = lhs - rhs;

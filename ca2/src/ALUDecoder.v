@@ -18,7 +18,8 @@ module ALUDecoder(
     clk, rst, ALU_op, f3, f7,
     ALU_func
 );
-    input clk, rst, zero;
+    input clk, rst;
+    input [1:0] ALU_op;
     input [2:0] f3;
     input [6:0] f7;
 

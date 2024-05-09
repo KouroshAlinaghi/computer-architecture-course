@@ -20,8 +20,8 @@ module ImmediateExtention(
             `IMM_S_TYPE: res = { {20{imm_data[24]}}, imm_data[24:18], imm_data[4:0] };
             `IMM_B_TYPE: res = { {19{imm_data[24]}}, imm_data[24], imm_data[0], imm_data[23:18], imm_data[4:1], 1'b0 };
             `IMM_LUI: res = { imm_data[24:5], 12'b0 };
-            `IMM_JAL: res = { 11'b0, imm_data[24], imm_data[12:5], imm_data[13], imm_data[23:14], 1'b0 }
-            default: 
+            `IMM_JAL: res = { 11'b0, imm_data[24], imm_data[12:5], imm_data[13], imm_data[23:14], 1'b0 };
+            default:  res = 32'b0;
         endcase
     end
     

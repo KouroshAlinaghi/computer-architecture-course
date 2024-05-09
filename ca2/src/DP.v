@@ -1,19 +1,19 @@
 module Datapath(
     clk, rst, inst_mem_read, data_mem_read,
-    PC_src, reg_write, ALU_src, imm_src, ALU_func, mem_write, result_src,
-    zero, inst_mem_addr, data_mem_addr, data_mem_write
+    PC_src, reg_write, ALU_src, imm_src, ALU_func, mem_write, result_src, is_jalr,
+    zero, inst_mem_addr, data_mem_addr, data_mem_write, neg
 );
     input clk, rst;
 
     input [31:0] inst_mem_read;
     input [31:0] data_mem_read;
 
-    input PC_src, reg_write, ALU_src, mem_write;
+    input PC_src, reg_write, ALU_src, mem_write, is_jalr;
     input [1:0] result_src;
     input [2:0] imm_src;
     input [2:0] ALU_func;
 
-    output zero;
+    output zero, neg;
     output [31:0] inst_mem_addr;
     output [31:0] data_mem_addr;
     output [31:0] data_mem_write;
@@ -31,7 +31,7 @@ module Datapath(
     RegisterFile rf(
         clk, rst, inst_mem_read[19:15], inst_mem_read[24:20], inst_mem_read[11:7], result, reg_write,
         RD1, RD2
-    )
+    );
 
     wire [31:0] rhs;
     wire [31:0] imm_extended;
@@ -41,9 +41,9 @@ module Datapath(
     );
 
     wire [31:0] ALU_res;
-    module ALU(
+    ALU alu(
         RD1, rhs, ALU_func,
-        ALU_res, zero
+        ALU_res, zero, neg
     );
 
     ImmediateExtention imm_ext(
@@ -51,20 +51,26 @@ module Datapath(
         imm_extended
     );
 
+    wire [31:0] next_pc;
     Mux4To1 result_mux(
         ALU_res, data_mem_read, next_pc, imm_extended, result_src,
         result
     );
     
-    wire [31:0] next_pc;
     Adder pc_inc(
         pc_out, 32'b00000000_00000000_00000000_00000100,
         next_pc
     );
 
+    wire [31:0] jump_address_lhs;
+    Mux2To1 jump_addr_lhs(
+        pc_out, RD1, is_jalr,
+        jump_address_lhs
+    );
+
     wire [31:0] jump_address;
     Adder jump_addr(
-        pc_out, imm_extended,
+        jump_address_lhs, imm_extended,
         jump_address
     );
 

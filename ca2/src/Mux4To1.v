@@ -1,9 +1,9 @@
-parameter INPUT_SIZE = 32;
-
 module Mux4To1(
     opt_0, opt_1, opt_2, opt_3, sel,
     out
 );
+    parameter INPUT_SIZE = 32;
+
     input [1:0] sel;
     input [INPUT_SIZE - 1:0] opt_0;
     input [INPUT_SIZE - 1:0] opt_1;
