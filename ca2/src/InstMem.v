@@ -7,9 +7,9 @@ module InstructionMemory(
     output [31:0] read_data;
     reg [31:0] read_data; 
 
-    reg [31:0] data [0:1023];
+    reg [7:0] data [0:1023];
 
     always @(address) begin
-        read_data <= data[address];
+        read_data <= { data[address], data[address + 1], data[address + 2], data[address + 3] };
     end
 endmodule

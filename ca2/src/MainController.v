@@ -45,7 +45,7 @@ module MainController(
     reg [2:0] imm_src;
     reg [1:0] ALU_op;
 
-    always @(zero, opc) begin
+    always @(zero, opc, neg, f3) begin
         {PC_src, reg_write, ALU_src, mem_write} = 4'b0000;
         result_src = 2'b00;
         imm_src = `IMM_I_TYPE;

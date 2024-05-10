@@ -16,6 +16,10 @@ module RegisterFile(
 
     reg [31:0] data [0:31];
 
+    initial begin
+        data[0] = 32'b0;
+    end
+
     always @(addr1, addr2) begin
         read_data1 <= data[addr1];
         read_data2 <= data[addr2];    
