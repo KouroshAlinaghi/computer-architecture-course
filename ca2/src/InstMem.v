@@ -9,6 +9,10 @@ module InstructionMemory(
 
     reg [7:0] data [0:1023];
 
+    initial begin
+        $readmemb("../ins.txt", data);
+    end
+
     always @(address) begin
         read_data <= { data[address], data[address + 1], data[address + 2], data[address + 3] };
     end
