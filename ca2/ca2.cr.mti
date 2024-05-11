@@ -1,0 +1,106 @@
+C:/Users/Kourosh/Documents/pain/ca2/src/MainController.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/MainController.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MainController
+
+Top level modules:
+	MainController
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/DataMem.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/DataMem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/ALU.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/Mux4To1.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/Mux4To1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux4To1
+
+Top level modules:
+	Mux4To1
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/InstMem.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/InstMem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstructionMemory
+
+Top level modules:
+	InstructionMemory
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/RegFile.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/RegFile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/tb.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/Computer.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/Computer.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Computer
+
+Top level modules:
+	Computer
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/Adder.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/Adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/CPU.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/CPU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/PC.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/PC.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ProgramCounter
+
+Top level modules:
+	ProgramCounter
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/ImmExt.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/ImmExt.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ImmediateExtention
+
+Top level modules:
+	ImmediateExtention
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/DP.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/DP.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Datapath
+
+Top level modules:
+	Datapath
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/Controller.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/Controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca2/src/Mux2To1.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca2/src/Mux2To1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux2To1
+
+Top level modules:
+	Mux2To1
+
+} {} {}}

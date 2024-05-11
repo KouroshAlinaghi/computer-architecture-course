@@ -40,10 +40,10 @@ module MainController(
     output [2:0] imm_src;
     output [1:0] ALU_op;
 
-    reg PC_src, reg_write, ALU_src, mem_write, is_jalr;
-    reg [1:0] result_src;
-    reg [2:0] imm_src;
-    reg [1:0] ALU_op;
+    reg PC_src = 1'b0, reg_write = 1'b0, ALU_src = 1'b0, mem_write = 1'b0, is_jalr = 1'b0;
+    reg [1:0] result_src = 2'b00;
+    reg [2:0] imm_src = 3'b000;
+    reg [1:0] ALU_op = 2'b00;
 
     always @(zero, opc, neg, f3) begin
         {PC_src, reg_write, ALU_src, mem_write} = 4'b0000;
@@ -63,7 +63,7 @@ module MainController(
                 {PC_src, reg_write, ALU_src, mem_write} = 4'b0011;
                 result_src = 2'b00;
                 imm_src = `IMM_S_TYPE;
-                ALU_op = `SUB_ANYWAY;
+                ALU_op = `ADD_ANYWAY;
                 is_jalr = 1'b0;
             end
             `RT: begin 
@@ -102,10 +102,10 @@ module MainController(
                 is_jalr = 1'b0;
             end
             `JAL: begin
-                {PC_src, reg_write, ALU_src, mem_write} = 4'b1110;
+                {PC_src, reg_write, ALU_src, mem_write} = 4'b1100;
                 result_src = 2'b10;
                 imm_src = `IMM_JAL;
-                ALU_op = `I_TYPE;
+                ALU_op = `ADD_ANYWAY;
                 is_jalr = 1'b0;
             end
             `JALR: begin

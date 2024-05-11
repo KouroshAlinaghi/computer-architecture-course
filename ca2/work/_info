@@ -1,0 +1,394 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Kourosh/Documents/logic-circuits/Lab3
+vAdder
+!s110 1715410016
+!i10b 1
+!s100 7?Y;ll0XFJOSh0IhfM?<b3
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In@j65j70Q42C`nSYBY2kG2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Kourosh/Documents/pain/ca2
+w1715362881
+8C:/Users/Kourosh/Documents/pain/ca2/src/Adder.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/Adder.v
+!i122 912
+L0 1 11
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1715410016.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/Adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/Adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@adder
+vALU
+Z7 !s110 1715410017
+!i10b 1
+!s100 9G7X]FaXalOORj5LW@LM41
+R0
+I4PAVB1UMGFb=aE5>DzBh02
+R1
+R2
+w1715365475
+8C:/Users/Kourosh/Documents/pain/ca2/src/ALU.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/ALU.v
+!i122 913
+L0 9 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/ALU.v|
+!i113 1
+R5
+R6
+n@a@l@u
+vALUDecoder
+R7
+!i10b 1
+!s100 =ZSN3oMHcbAol`SEGl14P0
+R0
+I04bE:[@jknz@7AAQF1f5W3
+R1
+R2
+w1715410011
+8C:/Users/Kourosh/Documents/pain/ca2/src/ALUDecoder.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/ALUDecoder.v
+!i122 914
+L0 17 45
+R3
+r1
+!s85 0
+31
+Z8 !s108 1715410017.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/ALUDecoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/ALUDecoder.v|
+!i113 1
+R5
+R6
+n@a@l@u@decoder
+vComputer
+R7
+!i10b 1
+!s100 h;IVd`MJ5i64W6MD0X>^@0
+R0
+I@1a9<ThVcm5ghVCz9HGoI1
+R1
+R2
+w1714460839
+8C:/Users/Kourosh/Documents/pain/ca2/src/Computer.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/Computer.v
+!i122 915
+L0 1 28
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/Computer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/Computer.v|
+!i113 1
+R5
+R6
+n@computer
+vController
+Z9 !s110 1715410018
+!i10b 1
+!s100 7N64TFmbR>K4FiQYCB4hW3
+R0
+IWI6W^>NBoTVzmQ657Y_Qo2
+R1
+R2
+w1715367363
+8C:/Users/Kourosh/Documents/pain/ca2/src/Controller.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/Controller.v
+!i122 916
+L0 1 26
+R3
+r1
+!s85 0
+31
+Z10 !s108 1715410018.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/Controller.v|
+!i113 1
+R5
+R6
+n@controller
+vCPU
+R9
+!i10b 1
+!s100 GoooV=acABmUhzN[LCdPd1
+R0
+IPAVfR9UjBkWdCQe48OL?;1
+R1
+R2
+w1715278612
+8C:/Users/Kourosh/Documents/pain/ca2/src/CPU.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/CPU.v
+!i122 917
+L0 1 34
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/CPU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/CPU.v|
+!i113 1
+R5
+R6
+n@c@p@u
+vDataMemory
+Z11 !s110 1715410019
+!i10b 1
+!s100 :H[^B9a1U>`K5;@YOJDCN2
+R0
+Ih0ZFDbkRdgPhWke387J:V3
+R1
+R2
+w1715406315
+8C:/Users/Kourosh/Documents/pain/ca2/src/DataMem.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/DataMem.v
+!i122 918
+L0 1 30
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/DataMem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/DataMem.v|
+!i113 1
+R5
+R6
+n@data@memory
+vDatapath
+R11
+!i10b 1
+!s100 9oE=l3gk8>I@]VZ]iA8f51
+R0
+I9?]nmT]jgPn7K8[99h2_m3
+R1
+R2
+w1715278712
+8C:/Users/Kourosh/Documents/pain/ca2/src/DP.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/DP.v
+!i122 919
+L0 1 85
+R3
+r1
+!s85 0
+31
+Z12 !s108 1715410019.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/DP.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/DP.v|
+!i113 1
+R5
+R6
+n@datapath
+vImmediateExtention
+Z13 !s110 1715410020
+!i10b 1
+!s100 2ScKHUgPW0>4S3WnzKPMa0
+R0
+IE3YgUm2?Ek1WRg]^llR9>1
+R1
+R2
+w1715407252
+8C:/Users/Kourosh/Documents/pain/ca2/src/ImmExt.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/ImmExt.v
+!i122 920
+L0 7 22
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/ImmExt.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/ImmExt.v|
+!i113 1
+R5
+R6
+n@immediate@extention
+vInstructionMemory
+R13
+!i10b 1
+!s100 ZHnoj28mKCDBonUNeo1gD3
+R0
+InikX[JY]:3;R6;mjXoX^32
+R1
+R2
+w1715364367
+8C:/Users/Kourosh/Documents/pain/ca2/src/InstMem.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/InstMem.v
+!i122 921
+L0 1 22
+R3
+r1
+!s85 0
+31
+Z14 !s108 1715410020.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/InstMem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/InstMem.v|
+!i113 1
+R5
+R6
+n@instruction@memory
+vMainController
+R13
+!i10b 1
+!s100 PBh4ngVQAdHe9_bJ8Q_RO2
+R0
+IP6[caaLgDX?Kmmb<>i6Ri3
+R1
+R2
+w1715406955
+8C:/Users/Kourosh/Documents/pain/ca2/src/MainController.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/MainController.v
+!i122 922
+L0 30 98
+R3
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/MainController.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/MainController.v|
+!i113 1
+R5
+R6
+n@main@controller
+vMux2To1
+Z15 !s110 1715410021
+!i10b 1
+!s100 EWQB6^8j`GS39=eBN?8fG2
+R0
+IgzIGm5@nle289DSEf8=AV1
+R1
+R2
+w1715278865
+8C:/Users/Kourosh/Documents/pain/ca2/src/Mux2To1.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/Mux2To1.v
+!i122 923
+L0 1 15
+R3
+r1
+!s85 0
+31
+Z16 !s108 1715410021.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/Mux2To1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/Mux2To1.v|
+!i113 1
+R5
+R6
+n@mux2@to1
+vMux4To1
+R15
+!i10b 1
+!s100 i1DSS`FzQe`;MmDWJKY:J0
+R0
+IN4LS104HBdS0cBWL>52c`0
+R1
+R2
+w1715278874
+8C:/Users/Kourosh/Documents/pain/ca2/src/Mux4To1.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/Mux4To1.v
+!i122 924
+L0 1 20
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/Mux4To1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/Mux4To1.v|
+!i113 1
+R5
+R6
+n@mux4@to1
+vProgramCounter
+Z17 !s110 1715410022
+!i10b 1
+!s100 HP1Y3JSLi2`nzVISagE8Z3
+R0
+IkTWe^>XNiL9lzTAzLRl0=0
+R1
+R2
+w1715363853
+8C:/Users/Kourosh/Documents/pain/ca2/src/PC.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/PC.v
+!i122 925
+L0 1 14
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/PC.v|
+!i113 1
+R5
+R6
+n@program@counter
+vRegisterFile
+R17
+!i10b 1
+!s100 diK>E;QYaejUZU4g;3Of?3
+R0
+ITh2zFlHlcG;bU<T<SkJhO3
+R1
+R2
+w1715367214
+8C:/Users/Kourosh/Documents/pain/ca2/src/RegFile.v
+FC:/Users/Kourosh/Documents/pain/ca2/src/RegFile.v
+!i122 926
+L0 1 41
+R3
+r1
+!s85 0
+31
+Z18 !s108 1715410022.000000
+!s107 C:/Users/Kourosh/Documents/pain/ca2/src/RegFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/src/RegFile.v|
+!i113 1
+R5
+R6
+n@register@file
+vtb
+R17
+!i10b 1
+!s100 gIkO@JXz7IaQ[Y6f0TE@C2
+R0
+IIU6NXM4eg>h=65QHiCFJb0
+R1
+R2
+w1715408340
+8C:/Users/Kourosh/Documents/pain/ca2/tb.v
+FC:/Users/Kourosh/Documents/pain/ca2/tb.v
+!i122 927
+L0 2 19
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/Kourosh/Documents/pain/ca2/tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kourosh/Documents/pain/ca2/tb.v|
+!i113 1
+R5
+R6

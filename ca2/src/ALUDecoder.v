@@ -24,7 +24,7 @@ module ALUDecoder(
     input [6:0] f7;
 
     output [2:0] ALU_func;
-    reg [2:0] ALU_func;
+    reg [2:0] ALU_func = `ADD_FUNC;
 
     always @(ALU_op, f3, f7) begin
         case (ALU_op)
@@ -36,10 +36,10 @@ module ALUDecoder(
                 case ({f7, f3})
                     10'b0000000_000: ALU_func = `ADD_FUNC;
                     10'b0100000_000: ALU_func = `SUB_FUNC;
-                    10'b0100000_111: ALU_func = `AND_FUNC;
-                    10'b0100000_110: ALU_func = `OR_FUNC;
-                    10'b0100000_010: ALU_func = `SLT_FUNC;
-                    10'b0100000_011: ALU_func = `SLTU_FUNC;
+                    10'b0000000_111: ALU_func = `AND_FUNC;
+                    10'b0000000_110: ALU_func = `OR_FUNC;
+                    10'b0000000_010: ALU_func = `SLT_FUNC;
+                    10'b0000000_011: ALU_func = `SLTU_FUNC;
                     default: ALU_func = ALU_func;
                 endcase
             end

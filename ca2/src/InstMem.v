@@ -9,8 +9,11 @@ module InstructionMemory(
 
     reg [7:0] data [0:1023];
 
+    integer i;
     initial begin
-        $readmemb("../ins.txt", data);
+        for (i = 0; i < 1024; i = i + 1)
+            data[i] = 8'b0;
+        $readmemb("src/instructions.mem", data, 0, 131);
     end
 
     always @(address) begin

@@ -12,12 +12,12 @@ module ALU(
 );
     input [31:0] lhs;
     input [31:0] rhs;
-    input [3:0] func;
+    input [2:0] func;
 
     output zero, neg;
     output [31:0] res;
 
-    reg [31:0] res;
+    reg [31:0] res = 32'b0;
 
     assign zero = (res == 32'b0) ? 1'b1 : 1'b0;
     assign neg = res[31];

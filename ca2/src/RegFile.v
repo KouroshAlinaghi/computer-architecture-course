@@ -10,14 +10,16 @@ module RegisterFile(
     input [31:0] wd;
     
     output [31:0] read_data1;
-    reg [31:0] read_data1; 
+    reg [31:0] read_data1 = 32'b0; 
     output [31:0] read_data2;
-    reg [31:0] read_data2; 
+    reg [31:0] read_data2 = 32'b0; 
 
     reg [31:0] data [0:31];
 
+    integer i;
     initial begin
-        data[0] = 32'b0;
+        for (i = 0; i < 32; i = i + 1)
+            data[i] = 32'b0;
     end
 
     always @(addr1, addr2) begin
@@ -25,10 +27,9 @@ module RegisterFile(
         read_data2 <= data[addr2];    
     end
 
-    integer i;
     always @(posedge clk, rst) begin
         if (rst) begin
-            for (i = 0; i <= 31; i = i + 1) begin
+            for (i = 0; i < 32; i = i + 1) begin
                 data[i] = 32'b0;
             end
         end 

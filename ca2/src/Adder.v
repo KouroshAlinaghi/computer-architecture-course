@@ -3,9 +3,9 @@ module Adder(
     res
 );
     input [31:0] A;
-    input [13:0] B;
+    input [31:0] B;
 
-    output [13:0] res;
+    output [31:0] res;
 
     assign res = A + B;
 endmodule

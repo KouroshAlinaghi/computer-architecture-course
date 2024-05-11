@@ -1,0 +1,49 @@
+addi x2, x2, -50
+addi x8, x2, 0
+addi x6, zero, 10
+sw x6, 0(x8)
+addi x6, zero, 4
+sw x6, 4(x8)
+addi x6, zero, 18
+sw x6, 8(x8)
+addi x6, zero, 24
+sw x6, 12(x8)
+addi x6, zero, 2
+sw x6, 16(x8)
+addi x6, zero, 31
+sw x6, 20(x8)
+addi x6, zero, 9
+sw x6, 24(x8)
+addi x6, zero, 11
+sw x6, 28(x8)
+addi x6, zero, 21
+sw x6, 32(x8)
+addi x6, zero, 32
+sw x6, 36(x8)
+
+// x6 = 10
+// x7 = &a[i]
+// x28 = a[i]
+// x29 = sltu result
+// x8 = &a[0]
+// x9 = max
+// x18 = i
+
+addi x6, zero, 10
+addi x7, x8, 0
+addi x9, zero, 0
+addi x18, zero, 0
+
+LOOP:
+	bge x18, x6, END_LOOP
+	lw x28, 0(x7)
+	sltu x29, x9, x28
+	beq x29, zero, LOOP_INC
+	addi x9, x28, 0
+
+	LOOP_INC:
+		addi x18, x18, 1
+		addi x7, x7, 4
+		jal x1, LOOP
+
+END_LOOP
