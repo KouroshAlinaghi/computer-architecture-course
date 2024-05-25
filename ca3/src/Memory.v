@@ -1,24 +1,30 @@
 module Memory(
-    clk, memAdr, writeData, memWrite, 
-    readData
+    clk, address, wd, we, 
+    read_data
 );
-    input [31:0] memAdr, writeData;
-    input memWrite, clk;
-    output [31:0] readData;
-    reg [31:0] readData;
+    input [31:0] address, wd;
+    input we, clk;
 
-    reg [7:0] dataMem [0:$pow(2, 16)-1];
+    output [31:0] read_data;
 
-    initial $readmemb("instructions.mem", dataMem);
+    reg [7:0] data [0:$pow(2, 16)-1];
 
-    wire [31:0] adr;
-    assign adr = {memAdr[31:2], 2'b00};
-    
-    always @(posedge clk) begin
-        if (memWrite)
-            {dataMem[adr + 3], dataMem[adr + 2], dataMem[adr + 1], dataMem[adr]} <= writeData;
+    integer i;
+    initial begin
+        for (i = 0; i < $pow(2, 16); i = i + 1)
+            data[i] = 32'b0;
+
+        $readmemb("data.mem", data);
     end
-    
-    assign readData = {dataMem[adr + 3], dataMem[adr + 2], dataMem[adr + 1], dataMem[adr]};
-    
+
+    assign read_data = { data[address], data[address + 1], data[address + 2], data[address + 3] };
+
+    always @(posedge clk) begin
+        if (we) begin
+            data[address] <= wd[31:24];
+            data[address + 1] <= wd[23:16];
+            data[address + 2] <= wd[15:8];
+            data[address + 3] <= wd[7:0];
+        end
+    end
 endmodule

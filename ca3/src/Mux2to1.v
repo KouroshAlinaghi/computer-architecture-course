@@ -1,13 +1,14 @@
 module Mux2To1(
-    opt_if_zero, opt_if_one, sel,
+    opt_0, opt_1, sel,
     out
 );
-    parameter N = 32;
-    
     input sel;
-    input [N-1:0] opt_if_zero, opt_if_one;
+    input [31:0] opt_0;
+    input [31:0] opt_1;
 
-    output [N-1:0] out;
+    output [31:0] out;
     
-    assign out = ~sel ? opt_if_zero : opt_if_one;
+    assign out = (sel == 1'b0) ? opt_0 :
+                 (sel == 1'b1) ? opt_1 :
+                 32'bz;
 endmodule

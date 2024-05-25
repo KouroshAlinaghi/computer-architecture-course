@@ -1,0 +1,99 @@
+C:/Users/Kourosh/Documents/pain/ca3/src/ALUDecoder.v {1 {vlog -work work -stats=none {C:\Users\Kourosh\Documents\pain\ca3\src\ALUDecoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALUDecoder
+
+Top level modules:
+	ALUDecoder
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/Mux2to1.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/Mux2to1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux2To1
+
+Top level modules:
+	Mux2To1
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/ALU.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/BranchController.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/BranchController.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BranchController
+
+Top level modules:
+	BranchController
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/Mux4to1.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/Mux4to1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux4To1
+
+Top level modules:
+	Mux4To1
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/DP.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/DP.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Datapath
+
+Top level modules:
+	Datapath
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/Controller.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/Controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/ImmediateExtend.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/ImmediateExtend.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ImmExtension
+
+Top level modules:
+	ImmExtension
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/CPU.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/CPU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB
+
+Top level modules:
+	TB
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/MainController.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/MainController.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MainController
+
+Top level modules:
+	MainController
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/Memory.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/Memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Memory
+
+Top level modules:
+	Memory
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/Register.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/Register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} C:/Users/Kourosh/Documents/pain/ca3/src/RegisterFile.v {1 {vlog -work work -stats=none C:/Users/Kourosh/Documents/pain/ca3/src/RegisterFile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}}

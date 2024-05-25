@@ -1,0 +1,342 @@
+# Compile of ALU.v was successful.
+# Compile of ALU_Controller.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of InstrDataMemory.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of Registerfile.v was successful.
+# Compile of RISC_V.v was successful.
+# Compile of RISC_V_Controller.v was successful.
+# Compile of RISC_V_Datapath.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 00:42:36 on May 25,2024
+# Loading work.TB
+# Loading work.RISC_V
+# Loading work.RISC_V_Controller
+# Loading work.MainController
+# Loading work.ALU_Controller
+# Loading work.BranchController
+# Loading work.RISC_V_Datapath
+# Loading work.Register
+# Loading work.Mux2to1
+# Loading work.Mux4to1
+# Loading work.ImmExtension
+# Loading work.ALU
+# Loading work.InstrDataMemory
+# Loading work.RegisterFile
+add wave -position insertpoint  \
+sim:/TB/clk
+add wave -position insertpoint  \
+sim:/TB/risc_v/CU/op \
+sim:/TB/risc_v/CU/func3 \
+sim:/TB/risc_v/CU/clk \
+sim:/TB/risc_v/CU/rst \
+sim:/TB/risc_v/CU/zero \
+sim:/TB/risc_v/CU/neg \
+sim:/TB/risc_v/CU/func7 \
+sim:/TB/risc_v/CU/PCWrite \
+sim:/TB/risc_v/CU/adrSrc \
+sim:/TB/risc_v/CU/memWrite \
+sim:/TB/risc_v/CU/IRWrite \
+sim:/TB/risc_v/CU/regWrite \
+sim:/TB/risc_v/CU/resultSrc \
+sim:/TB/risc_v/CU/ALUSrcA \
+sim:/TB/risc_v/CU/ALUSrcB \
+sim:/TB/risc_v/CU/ALUControl \
+sim:/TB/risc_v/CU/immSrc \
+sim:/TB/risc_v/CU/PCUpdate \
+sim:/TB/risc_v/CU/branch \
+sim:/TB/risc_v/CU/branchRes \
+sim:/TB/risc_v/CU/ALUOp
+run -all
+# ** Note: $stop    : C:/Users/Kourosh/Documents/pain/3 - RISC-V Multi-Cycle/code/TestBench.v(10)
+#    Time: 3508 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at C:/Users/Kourosh/Documents/pain/3 - RISC-V Multi-Cycle/code/TestBench.v line 10
+quit -sim
+# End time: 00:48:08 on May 25,2024, Elapsed time: 0:05:32
+# Errors: 0, Warnings: 2
+project open C:/Users/Kourosh/Documents/pain/ca3/kir
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project kir
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Memory.v failed with 2 errors.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 1 failed with 2 errors.
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Memory.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 00:48:56 on May 25,2024
+# Loading work.TB
+# Loading work.CPU
+# Loading work.Controller
+# Loading work.MainController
+# Loading work.ALUDecoder
+# Loading work.BranchController
+# Loading work.Datapath
+# Loading work.Mux2To1
+# Loading work.Mux4To1
+# Loading work.ImmExtension
+# Loading work.ALU
+# Loading work.Memory
+# Loading work.RegisterFile
+# Loading work.Register
+add wave -position insertpoint  \
+sim:/TB/LUT/clk \
+sim:/TB/LUT/rst \
+sim:/TB/LUT/f3 \
+sim:/TB/LUT/ALUControl \
+sim:/TB/LUT/immSrc \
+sim:/TB/LUT/f7 \
+sim:/TB/LUT/zero \
+sim:/TB/LUT/neg \
+sim:/TB/LUT/memWrite \
+sim:/TB/LUT/regWrite \
+sim:/TB/LUT/PCWrite \
+sim:/TB/LUT/adrSrc \
+sim:/TB/LUT/IRWrite \
+sim:/TB/LUT/resultSrc \
+sim:/TB/LUT/ALUSrcA \
+sim:/TB/LUT/ALUSrcB \
+sim:/TB/LUT/opc
+run -all
+# ** Note: $stop    : C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v(10)
+#    Time: 3500 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v line 10
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Memory.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.CPU
+# Loading work.Controller
+# Loading work.MainController
+# Loading work.ALUDecoder
+# Loading work.BranchController
+# Loading work.Datapath
+# Loading work.Mux2To1
+# Loading work.Mux4To1
+# Loading work.ImmExtension
+# Loading work.ALU
+# Loading work.Memory
+# Loading work.RegisterFile
+# Loading work.Register
+run -all
+# ** Note: $stop    : C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v(10)
+#    Time: 3500 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v line 10
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v failed with 1 errors.
+# Compile of Memory.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 1 failed with 1 error.
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Memory.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.CPU
+# Loading work.Controller
+# Loading work.MainController
+# Loading work.ALUDecoder
+# Loading work.BranchController
+# Loading work.Datapath
+# Loading work.Mux2To1
+# Loading work.Mux4To1
+# Loading work.ImmExtension
+# Loading work.ALU
+# Loading work.Memory
+# Loading work.RegisterFile
+# Loading work.Register
+run -all
+# ** Note: $stop    : C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v(10)
+#    Time: 3500 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v line 10
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v failed with 2 errors.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Memory.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 1 failed with 2 errors.
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Memory.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.CPU
+# Loading work.Controller
+# Loading work.MainController
+# Loading work.ALUDecoder
+# Loading work.BranchController
+# Loading work.Datapath
+# Loading work.Mux2To1
+# Loading work.Mux4To1
+# Loading work.ImmExtension
+# Loading work.ALU
+# Loading work.Memory
+# Loading work.RegisterFile
+# Loading work.Register
+run -all
+# ** Note: $stop    : C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v(10)
+#    Time: 3500 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v line 10
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Memory.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.CPU
+# Loading work.Controller
+# Loading work.MainController
+# Loading work.ALUDecoder
+# Loading work.BranchController
+# Loading work.Datapath
+# Loading work.Mux2To1
+# Loading work.Mux4To1
+# Loading work.ImmExtension
+# Loading work.ALU
+# Loading work.Memory
+# Loading work.RegisterFile
+# Loading work.Register
+run -all
+# ** Note: $stop    : C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v(10)
+#    Time: 3500 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v line 10
+# Compile of ALU.v was successful.
+# Compile of ALUDecoder.v was successful.
+# Compile of BranchController.v was successful.
+# Compile of Controller.v was successful.
+# Compile of CPU.v was successful.
+# Compile of DP.v was successful.
+# Compile of ImmediateExtend.v was successful.
+# Compile of MainController.v was successful.
+# Compile of Memory.v was successful.
+# Compile of Mux2to1.v was successful.
+# Compile of Mux4to1.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of TestBench.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.CPU
+# Loading work.Controller
+# Loading work.MainController
+# Loading work.ALUDecoder
+# Loading work.BranchController
+# Loading work.Datapath
+# Loading work.Mux2To1
+# Loading work.Mux4To1
+# Loading work.ImmExtension
+# Loading work.ALU
+# Loading work.Memory
+# Loading work.RegisterFile
+# Loading work.Register
+run -all
+# ** Note: $stop    : C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v(10)
+#    Time: 3500 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at C:/Users/Kourosh/Documents/pain/ca3/src/TestBench.v line 10
+# End time: 01:23:26 on May 25,2024, Elapsed time: 0:34:30
+# Errors: 0, Warnings: 1

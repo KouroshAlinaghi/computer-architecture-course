@@ -4,20 +4,20 @@
 `define BGE 3'b011
 
 module BranchController(
-    func3, branch, neg, zero,
+    f3, branch, neg, zero,
     w
 );
     input branch, zero, neg;
-    inout [2:0] func3;
+    input [2:0] f3;
 
-    output reg w;
+    output reg w = 1'b0;
     
-    always @(func3, zero, neg, branch) begin
-        case(func3)
-            `BEQ   : w <= branch & zero;
-            `BNE   : w <= branch & ~zero;
-            `BLT   : w <= branch & neg;
-            `BGE   : w <= branch & (zero | ~neg);
+    always @(f3, zero, neg, branch) begin
+        case (f3)
+            `BEQ: w <= branch & zero;
+            `BNE: w <= branch & ~zero;
+            `BLT: w <= branch & neg;
+            `BGE: w <= branch & (zero | ~neg);
             default: w <= 1'b0;
         endcase
     end

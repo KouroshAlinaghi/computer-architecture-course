@@ -6,17 +6,19 @@
 `define XOR 3'b100
 `define SLTU 3'b111
 
-module ALU(opc, lhs, rhs, zero, neg, res);
-    parameter N = 32;
-
-    input [2:0] opc;
-    input [N-1:0] lhs, rhs;
+module ALU(
+    func, lhs, rhs,
+    zero, neg, res
+);
+    input [2:0] func;
+    input [31:0] lhs;
+    input [31:0] rhs;
     
     output zero, neg;
-    output reg [N-1:0] res;
+    output reg [31:0] res = 32'b0;
     
-    always @(lhs or rhs or opc) begin
-        case (opc)
+    always @(lhs, rhs, func) begin
+        case (func)
             `ADD: res = lhs + rhs;
             `SUB: res = lhs - rhs;
             `AND: res = lhs & rhs;
@@ -24,10 +26,10 @@ module ALU(opc, lhs, rhs, zero, neg, res);
             `SLT: res = $signed(lhs) < $signed(rhs) ? 32'd1 : 32'd0;
             `SLTU: res = lhs < rhs ? 32'b1 : 32'b0;
             `XOR: res = lhs ^ rhs;
-            default: res = {N{1'bz}};
+            default: res = 32'bz;
         endcase
     end
 
-    assign zero = (~|res);
-    assign neg = res[N-1];
+    assign zero = (res == 32'b0) ? 1'b1 : 1'b0;
+    assign neg = res[31];
 endmodule
